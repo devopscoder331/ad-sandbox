@@ -16,6 +16,15 @@ tasks:
   name: docs
   places: 1
   puts: 1
+tasks:
+- checker: mole_vault/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: mole_vault
+  places: 1
+  puts: 1
+
 
 teams:
 - ip: 192.168.1.201
