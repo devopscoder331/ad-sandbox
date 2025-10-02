@@ -16,7 +16,6 @@ tasks:
   name: docs
   places: 1
   puts: 1
-tasks:
 - checker: mole_vault/checker.py
   checker_timeout: 15
   checker_type: pfr
