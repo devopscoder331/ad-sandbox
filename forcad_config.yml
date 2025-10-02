@@ -1,0 +1,26 @@
+game:
+  mode: classic
+  round_time: 60
+  start_time: 2025-10-01 11:00:00
+  timezone: Europe/Moscow
+  default_score: 2500
+  flag_lifetime: 10
+  game_hardness: 15.0
+  inflation: true
+
+tasks:
+- checker: docs/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: docs
+  places: 1
+  puts: 1
+
+teams:
+- ip: 192.168.1.201
+  name: Team1
+  highlighted: false
+- ip: 192.168.1.202
+  name: Team2
+  highlighted: false
