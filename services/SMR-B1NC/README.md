@@ -1,1 +1,0 @@
-Вместо Pangolin используйте PostgreSQL
