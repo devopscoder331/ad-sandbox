@@ -1,5 +1,5 @@
 ARG PYTHON_VERSION=3.9.6
-FROM python:${PYTHON_VERSION}-slim as base
+FROM python:${PYTHON_VERSION}-slim AS base
 
 
 WORKDIR /app
@@ -11,7 +11,6 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . .
 
 EXPOSE 11000
-EXPOSE 5432
 
 CMD python app.py
 
