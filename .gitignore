@@ -1,3 +1,7 @@
+#exception
+!services/BoilerRoom/.env
+
+# ignore
 __pycache__/
 *.py[cod]
 *$py.class
