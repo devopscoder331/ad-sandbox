@@ -23,7 +23,41 @@ tasks:
   name: mole_vault
   places: 1
   puts: 1
-
+- checker: 0BCA5/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: 0BCA5
+  places: 1
+  puts: 1
+- checker: BoilerRoom/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: Boiler-Room
+  places: 1
+  puts: 1
+- checker: CTR1PANEL/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: CTR1PANEL
+  places: 1
+  puts: 1
+- checker: SMR-B1NC/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: SMR-B1NC
+  places: 1
+  puts: 1
+- checker: vboard/checker.py
+  checker_timeout: 15
+  checker_type: pfr
+  gets: 1
+  name: vboard
+  places: 1
+  puts: 1
 
 teams:
 - ip: 192.168.1.201
