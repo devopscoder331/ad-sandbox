@@ -5,3 +5,4 @@ grpcio
 protobuf
 pwntools
 requests
+BaseChecker
