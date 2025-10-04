@@ -1,4 +1,6 @@
+beautifulsoup4
 checklib
 grpcio
 protobuf
 pwntools
+requests
