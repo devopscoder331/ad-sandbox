@@ -1,0 +1,16 @@
+services:
+  mole_vault:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "31339:31339"
+    volumes:
+      - ./vol/data:/app/data
+      - ./vol/secrets:/app/secrets
+    restart: unless-stopped
+    environment:
+      - GOMAXPROCS=2
+    mem_limit: 2G
+    cpus: 2
+    pids_limit: 512
