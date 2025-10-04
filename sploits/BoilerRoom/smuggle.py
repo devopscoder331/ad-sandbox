@@ -1,7 +1,7 @@
 import socket
 
 req1 = '''GET /api/healthcheck/?url=http://0.tcp.eu.ngrok.io:16995/localhost HTTP/1.1
-Host: 0.0.0.0:8000
+Host: 0.0.0.0:8010
 Upgrade: WebSocket
 Connection: Upgrade
 
@@ -39,4 +39,4 @@ def main(netloc):
 
 
 if __name__ == "__main__":
-    main('0.0.0.0:8000')
+    main('0.0.0.0:8010')

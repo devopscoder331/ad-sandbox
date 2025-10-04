@@ -4,7 +4,7 @@ import requests
 
 BASE_DIR = Path(__file__).absolute().resolve().parent
 
-PORT = 8000
+PORT = 8010
 
 class CheckMachine:
 

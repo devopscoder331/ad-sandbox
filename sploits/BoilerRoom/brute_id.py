@@ -17,7 +17,7 @@ for s in range(28, 60):
 		print(f"{str_to_hash}")
 		print(f"{sha256_hash}")
 
-		resp = requests.get(url=f"http://0.0.0.0:8000/api/order/{sha256_hash}")
+		resp = requests.get(url=f"http://0.0.0.0:8010/api/order/{sha256_hash}")
 
 		if resp.status_code == 200:
 			print(f"{strS}.{strMs}")
