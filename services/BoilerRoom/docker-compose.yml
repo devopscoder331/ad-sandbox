@@ -40,7 +40,6 @@ services:
   api:
     container_name: br_api_container
     build: .
-    command: "go run ./main.go"
     expose:
       - ${API_PORT}
     restart: on-failure
@@ -52,9 +51,7 @@ services:
       - DB_NAME=${DB_NAME}
       - API_PORT=${API_PORT}
     volumes:
-      - br_api_volume:/usr/src/app/
       - ./logs/:/var/log/services/
-      - ./br-app/:/app
     depends_on:
       postgres:
         condition: service_healthy
@@ -63,7 +60,6 @@ services:
 
 volumes:
   br_postgres_volume:
-  br_api_volume:
 
 networks:
   br_net:
